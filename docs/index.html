@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tesla Financial Analysis</title>
+   
+  <!-- Bootstrap core CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/grayscale.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <script src="../app.js"></script>
+  <script src="../plot.js"></script>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Tesla Financial Analysis</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Background</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#data">Financial Ratios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#model">DuPont Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Risk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Tesla Motors to Tesla Inc.</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">What's now? What's next?</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Vicky Section -->
+  <!-- Background Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Background</h2>
+          <p class="text-white-50">As one of the well-known and popular companies in the twenty-first century, 
+            Tesla Motors was founded in 2003 with the idea to create effective electric cars and sell them to the public. 
+            <br>
+            <br>
+
+            However, Tesla did not introduce any products until five years later, in 2008, its first car—Roadster—was released. <br><br>
+            Tesla released its new Model S in 2012, which was a critical triumph and successfully brought the company to the 
+            mainstream of the industry. <br><br>
+            In 2015, Tesla announced a new line of solar energy products designed to power homes and businesses.
+            In 2017, Tesla changed its name from “Tesla Motors” to “Tesla Inc. <br><br>
+            
+             As Tesla continues to “bloom”, its financial statements and capital
+             structure have long been a cause of concern for many analysts and investors over the last decade. Any yet, under Elon Musk’s idiosyncratic
+              leadership, the future cashflow still not reflect a stock price that high. The project will focus on analysis of the company's 
+              financial ratio, DuPont ratio, investment, industry and risk in order to better analyze the financial condition and facts of the company.</p>
+        </div>
+      </div>
+      <img src="assets/img/Tesla-Timeline.png" class="img-fluid" alt="">
+    </div>
+  </section>
+  
+
+  <!-- Data Section -->
+  <section id="data" class="projects-section bg-light">
+    <div class="row mb-4 mb-lg-5 mb-0 mb-lg-5">
+      <div class="col-xl-12 col-lg-12">
+        <div class="featured-text text-center text-lg-left mb-0 mb-lg-5">
+          <h4>Financial Ratios</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <!-- X-ray -->
+      <div class="row align-items-center  mb-2 mb-lg">
+        <div class="col-lg-6 col-lg-6">
+          <img class="img-fluid x-ray mb-3 mb-lg" src="assets/img/newplot (5).png" alt="">
+        </div>
+        <div class="col-lg-6 col-lg-6">
+          <img class="img-fluid x-ray mb-3 mb-lg" src="assets/img/newplot (2).png" alt="">
+        </div>
+      </div>
+
+      <div class="row mb-0 mb-lg-5">
+        <div class="col-xl-12 col-lg-12">
+          <div class="featured-text text-center text-lg-left mb-0">
+            <h4>Revenue and Net Income</h4>
+            <p>Tesla's revenue increased for more than 58 times from 2012 to 2019, but its net incomes
+              are still trending negative
+            </p>
+            <p class="text-black-50 mb-4">Data Sources: <a href="https://www.sec.gov/Archives/edgar/data/1467858/000146785819000033/gm201810k.htmhttps://www.sec.gov/Archives/edgar/data/1467858/000146785819000033/gm201810k.htm">Tesla's 10K</a></p>
+          </div>
+        </div>
+      
+        <div class="row align-items-center  mb-2 mb-lg">
+          <div class="col-lg-6 col-lg-6">
+            <img class="img-fluid x-ray mb-3 mb-lg" src="assets/img/Picture1.png" alt="">
+          </div>
+          <div class="col-lg-6 col-lg-6">
+            <img class="img-fluid x-ray mb-3 mb-lg" src="assets/img/Picture2.png" alt="">
+          </div>
+        </div>
+      </div>
+    
+        <div class="row mb-0 mb-lg-5">
+          <div class="col-xl-12 col-lg-12">
+            <div class="featured-text text-center text-lg-left mb-0">
+              <h4 color="black">Common-Size Balance Sheet</h4>
+              <p>Considering the size difference in the two companies, common-size balance sheets were derived for a better comparison. 
+                Between 2017 and 2019, both General Motors and Tesla have similar proportion in current assets,
+                 total debt and total equity. General Motors maintains around half percentage of inventories comparing to Tesla. This is also reflected in the cash ratio.
+                </p>
+            </div>
+          </div>
+        </div>
+        
+      <!-- Pie Chart -->
+      
+      <!-- Bar Chart -->
+      
+  </section>
+  <!-- Vicky Section End-->
+
+  <!-- Mason Section Start-->
+  <!-- Model Section -->
+  <section id="model" class="projects-section bg-light">
+    <div class="container">
+      <!-- Tools -->
+      <div class="row justify-content-center no-gutters mb-10 mb-lg-5">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="assets/img/Dupont-formula.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">DuPont Analysis</h4>
+                <p class="mb-0 text-white-50">
+                  <ul>
+                    <li class="mb-0 text-white-50">ROE</li>
+                    <li class="mb-0 text-white-50">Equity vs. Debt?</li>
+                   
+                  </ul>
+                </p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>s
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Screen Shot 2020-04-21 at 4.34.53 PM.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Total Debt comparison</h4>
+            <p class="text-black-50 mb-0">These ratios suggest that both Tesla and General Motors are using 81-83% of debt to their total assets.
+              For Tesla, their total debt increased by 23.94B from 2018 to 2019.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/newplot (8).png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>ROE: Tesla vs. General Motors</h4>
+            <p class="text-black-50 mb-0">For Tesla, both ROAs and ROEs are below zero in the recent five years (2015-2019) 
+              while General Motors’ are positive except in the year 2017, which indicates that General Motors have much higher 
+              asset utilization comparing to Tesla. Clearly the low ROA and ROE would be problems that Tesla needs to confront eventually. </p>
+          </div>
+        </div>
+      </div>
+    <!-- Base Model -->
+    
+
+  </div>
+    <!-- Model Architecture-->
+    
+
+    <!-- Model Performance-->
+    
+  </section>
+  <!-- Mason Section End-->  
+
+  <!-- Tenny Section Start-->
+  <!-- Analysis Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="row mb-4 mb-lg-5 mb-0 mb-lg-5">
+      <div class="col-xl-12 col-lg-12">
+        <div class="featured-text text-center text-lg-left mb-0 mb-lg-5">
+          <h4>Beta Calculations (March 2019 - March 2020)</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">    
+      
+      <!-- CM Chart -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Screen Shot 2020-04-21 at 4.48.25 PM.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Tesla's Beta</h4>
+            <p class="text-black-50 mb-0">During this period of time, the beta for Tesla is estimated to be around 1.18, 
+              which is higher than 1. More specifically, this means that Tesla’s stock moves slightly higher that the market.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Accuracy Table -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Screen Shot 2020-04-21 at 4.52.03 PM.png" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>General Motor's Beta</h4>
+            <p class="text-black-50 mb-0">The beta for General Motors is approximately 1.23 during the time period. 
+              The beta for General Motors is slightly higher than that of Tesla (by about 0.05).
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Prediction Section -->
+  <section id="signup" class="signup-section">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+          <div class="row mb-10">
+          <div class="col-xl-12 col-lg-12">
+            <div class="featured-text text-center text-lg-left mb-0 mb-lg-0">
+
+              <h4 class="text-white mb-5">Conclusion</h4>
+              <p class="text-white-50 mb-8">Although Tesla’s success in producing quality electric vehicles in widely known, its the financials and capital structure still cause concerns. 
+                Based on the analysis above, it is obvious that Tesla was not generating the sufficient revenues needed to sustain a positive net income by the end of 2019. Furthermore, 
+                its low return on equity rates also suggest that the company is not performing well to its shareholders.On the other hand, General Motors, was able to maintain positive ROAs 
+                and ROEs in the past two years (2018 and 2019), which indicates that the firm is performing better in asset utilization and attribution to its shareholders. Also, its lower cash 
+                ratio in recent years could suggest that the company is investing in new projects, for example developing electric vehicles, that would eventually bring in greater wealth.
+                <br>  
+                <br>
+                In addition, processing a beta of 1.18 (Between March 2019 and March 2020), Tesla’s stock is expected to either increase by more than the market in up markets or decrease by 
+                more than the market in down markets. 
+                <br>
+                <br>
+
+                For investors looking to make investments in a company with solid financial, Tesla is not the one to choose. The company experiencing negative 
+                cash flow and could only fund its operations by debt increases. The capital structure for Tesla is troublesome for investors and the company has to be able to grow its revenue significantly 
+                as well as increase its ROA, ROE and profit margin in order to bring confidence to its shareholders. Under the assumption that other automobile companies would eventually compete with Tesla in 
+                all-electric vehicles and accessory products, Tesla’s future is still in question.
+
+              </p>
+              <br>
+              <br>
+              <br>
+
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <br>
+          <br>
+          <br>
+
+          <h2 class="text-white mb-5">Additional Financial Ratio Calculations</h2>
+          <p>The right tables are ratios for General Motors and the left ones are ratios for Tesla</p>
+
+        </div>
+      </div>
+
+      <!-- Prediction -->
+      <div class="row align-items-center  mb-4 mb-lg-10">
+        <div class="col-xl-12 col-lg-12">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/Screen Shot 2020-04-21 at 5.01.41 PM.png" alt="">
+        </div>
+      </div>
+      <div class="row align-items-center  mb-4 mb-lg-10">
+        <div class="col-xl-12 col-lg-12">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/Screen Shot 2020-04-21 at 5.01.50 PM.png" alt="">
+        </div>
+      </div>
+      <div class="row align-items-center  mb-4 mb-lg-10">
+        <div class="col-xl-12 col-lg-12">
+          <img class="img-fluid mb-3 mb-lg" src="assets/img/Screen Shot 2020-04-21 at 5.01.58 PM.png" alt="">
+        </div>
+      </div>
+        
+    </div>
+  </section>
+  <!-- Tenny Section End-->
+  
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        
+       
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <a href="https://github.com/peirangxu">
+              <i class="fab fa-github text-primary mb-2"></i>
+              </a>
+              <h4 class="text-uppercase m-0">Github</h4>
+              <hr class="my-4">
+              <h4>Peirang Xu</h2>
+            </div>
+          </div>
+        </div>
+
+      
+        
+
+      <!-- <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Projects Section Copy -->
+  <!-- <section id="projects" class="projects-section bg-light">
+    <div class="container">    
+      
+      <div class="row justify-content-center no-gutters mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Misty</h4>
+                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Mountains</h4>
+                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- Signup Section -->
+  <!-- <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact Section -->
+  <!-- <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">hello@yourdomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (555) 902-8832</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section> -->
+
+  
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Peirang Xu 2020
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="assets/js/grayscale.min.js"></script>
+
+</body>
+
+</html>
